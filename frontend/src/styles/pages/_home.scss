@@ -1,0 +1,135 @@
+.home {
+    @include ccc;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    padding-bottom: 150px;
+
+    .home-visage {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+    }
+
+    .logo-container {
+        @include ccc;
+        height: 100vh;
+
+        .logo5degres {
+            position: absolute;
+            height: 80vh;
+            transform: rotate(20deg) translate(-400px, 150px);
+            opacity: .3;
+        }
+
+        .visage {
+            position: absolute;
+            height: 80vh;
+            right: 0;
+        }
+
+        .branding {
+            z-index: 10;
+            font-family: Open Sans;
+
+            span {
+                text-align: center;
+                width: fit-content;
+
+                &:nth-of-type(1) {
+                    font-weight: 900;
+                    font-size: 90px;
+
+                    span {
+                        font-weight: 200;
+                        color: $color-text;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    font-size: 61px;
+                }
+
+                &:nth-of-type(3) {
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    font-size: 57px;
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                width: 30px;
+                height: 30px;
+                position: relative;
+                margin: 10px;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+
+                }
+
+                a {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 0;
+
+                    opacity: 0;
+
+                }
+
+                span {
+                    font-family: 'Open sans';
+                    font-weight: 400;
+                    transition: all .25s ease;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translateY(20px);
+                    opacity: 0;
+                }
+
+                &:hover {
+                    span {
+                        transform: translateY(40px);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 800px) {
+            .branding {
+                span {
+
+                    &:nth-of-type(1) {
+                        font-size: 11vw !important;
+                        line-height:  11vw !important;                        
+                    }
+
+                    &:nth-of-type(2) {
+                        font-size: 7.5vw !important;;
+                        line-height:  7.5vw !important;;                        
+                    }
+
+
+                    &:nth-of-type(3) {
+                        font-size: 6.9vw;;
+                        line-height:  6.9vw;;                        
+                    }
+                }
+            }
+
+        }
+    }
+}
