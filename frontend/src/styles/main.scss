@@ -153,7 +153,7 @@ body {
 .subtitle {
   width: 1300px;
   font-size: 35px;
-  color: #7fd80a;
+  color: $titleColor;
   font-weight: 500;
 }
 
@@ -196,7 +196,7 @@ body {
       text-align: center;
       font-weight: 100;
       margin: 0;
-      color: #7fd80a !important;
+      color: $titleColor !important;
     }
   }
 
@@ -218,7 +218,7 @@ body {
 
   article {
     &:hover {
-      background-color: rgb(244, 244, 244);
+      background-color: $whiteBackground;
     }
   }
 }
@@ -240,7 +240,7 @@ body {
   text-align: center;
 
   span {
-    color: #7fd80a;
+    color: $titleColor;
   }
 }
 
@@ -257,11 +257,11 @@ body {
   margin: 15px 0px;
 
   b {
-    color: #7fd80a;
+    color: $titleColor;
   }
 
   a {
-    color: #18c250;
+    color: $titleColor2;
     text-decoration: none;
     font-weight: 700;
   }

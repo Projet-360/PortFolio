@@ -136,7 +136,7 @@ $a-height-mobile: 200px;
 
 
     &:hover {
-        box-shadow: 0 0px 38px rgb(38 114 213 / 30%), 0 15px 12px rgb(78 195 224 / 22%);
+        box-shadow: $shadowBox1;
 
         img {
             opacity: 0.1;
@@ -186,7 +186,7 @@ article {
             transition: all .5s ease;
 
             .portfolio-menu-c {
-                color: #7fd80a;
+                color: $titleColor;
             }
 
             .portfolio-menu-next {
@@ -214,7 +214,7 @@ article {
         &:hover {
             cursor: pointer;
             background-color: $color-text;
-            box-shadow: 0 0px 38px rgb(38 114 213 / 30%), 0 15px 12px rgb(78 195 224 / 22%);
+            box-shadow: $shadowBox1;
 
             h4,
             p {
@@ -397,7 +397,7 @@ article {
 
     .portfolio-square-container {
         @include portfolioItem;
-        background-color: #001133;
+        background-color: $boxDarkBlue;
         overflow: hidden;
         width: 25%;
         height: 300px;
@@ -408,7 +408,7 @@ article {
         align-items: center;
 
         &:nth-child(odd) {
-            background-color: #093168;
+            background-color: $boxDarkBlue2;
         }
 
         &:hover {
@@ -434,7 +434,7 @@ article {
                 width: 80%;
                 text-align: left;
                 margin-bottom: 15px;
-                color: #7fd80a;
+                color: $titleColor;
             }
 
             h3 {
@@ -643,7 +643,7 @@ article {
     min-height: 200px;
     margin: 15px 0 15px; // Mise à jour pour inclure la marge supérieure de 70px
     height: 300px;
-    background: linear-gradient(236deg, rgba(85, 185, 236, 1) 0%, rgba(38, 114, 213, 1) 100%);
+    background: $footerGradient;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
     justify-content: center !important; // Utilisation prudente de !important
