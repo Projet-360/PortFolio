@@ -237,7 +237,7 @@ export let bookData = [
 		id: 'c',
 		title: 'Boilerplate Sveltekit/NodeJs',
 		subtitle: `Je suis tombé amoureux de sveltekit, c'est pourquoi j'ai réalisé un boilerplate avec celui-ci`,
-		imageUrl: 'https://nexago.fr/wp-content/uploads/2019/09/informatique_infrastructure.jpg'
+		imageUrl: ''
 	},
 	{
 		id: 'd',
