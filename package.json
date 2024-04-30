@@ -4,8 +4,8 @@
   "description": "Boilerplate Sveltekit NodeJs MongoDB",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm --prefix ./frontend run dev\"",
-    "build": "concurrently \"npm --prefix ./frontend run build\"",
+    "dev": "npm --prefix ./frontend run dev",
+    "build": "npm --prefix ./frontend run build",
     "test": "npm --prefix ./frontend run test",
     "in": "cd ./frontend && npm i"
   },
