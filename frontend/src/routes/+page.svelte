@@ -67,7 +67,7 @@
 	<p class="paragraph-custom">
 		Notez que ce site n'est pas <b>garni de technologies</b>, mais si vous souhaitez voir un
 		<b>projet plus gourmand</b>, je vous invite à visiter le site
-		<a href="http://xplicitdrink.com" target="_blank" rel="noopener noreferrer">xplicitdrink</a>.
+		<a href="http://xplicitdrink.com" target="_blank" rel="noopener noreferrer">xplicitdrink</a>, concernant ce site, il n'est pas maintenu, il peut donc avoir subi des variations avec le temps, mais je maintiens qu'à sa sortie, ce site avait obtenu d'impressionnants scores.
 		Cela consiste à ouvrir <b>l'inspecteur</b> du navigateur <b>chrome</b> et à réaliser une analyse
 		sur l'onglet
 		<b>Lighthouse</b>. Xplicitdrink dispose de technologies comme <b>ThreeJs</b> et d'autres outils

@@ -1,29 +1,6 @@
-<script lang="ts">
-	import Git from '$lib/svg/Git.svelte';
-	import Malt from '$lib/svg/Malt.svelte';
-	import Linkedin from '$lib/svg/Linkedin.svelte';
-
-	let social = [
-		{
-			component: Git,
-			title: 'Github',
-			link: 'https://github.com/Pierre-FABIEN',
-			position: 1
-		},
-		{
-			component: Linkedin,
-			title: 'Linkedin',
-			link: 'https://www.linkedin.com/in/pierre-fabien/',
-			position: 2
-		}
-	];
-</script>
-
-<div class="logo-container">
-
-
-
-<svg class="logo5degres" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
 <g>
 	<path d="M1004.94,1038.78c6.26-10.73,11.81-20.38,17.49-29.95c16.83-28.36,33.95-56.58,45.72-87.55
@@ -48,21 +25,3 @@
 		c14.95-14.75,32.74-25.76,52.26-33.98C1239.23,45.56,1261.72,40.73,1288.67,40.89z"/>
 </g>
 </svg>
-
-	<img class="visage" src="/img/visage.webp" alt="visage" width="auto" height="80vh">
-	<h1 class="branding">
-		<span><span>Pierre</span> FABIEN</span><br />
-		<span>web développeur</span><br />
-		<span>Front-end - design</span>
-	</h1>
-	<ul>
-		{#each social as { component: IconComponent, title, link }}
-			<li>
-				<svelte:component this={IconComponent} />
-
-				<a href={link} target="_blank" rel="noopener noreferrer">{title}</a>
-				<span>{title}</span>
-			</li>
-		{/each}
-	</ul>
-</div>
