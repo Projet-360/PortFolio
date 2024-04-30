@@ -6,7 +6,7 @@
 	{#each competencesData as { id, title, content, imageUrl }, index}
 		<article class={`portfolio-card ${id}`}>
 			{#if imageUrl}
-				<img src={imageUrl} alt="" />
+				<img src={imageUrl} alt={title} width="100%" height="100%"/>
 			{/if}
 			<h3 class="portfolio-card-h3">{title}</h3>
 			<h4 class="portfolio-card-h4">{@html content}</h4>

@@ -6,7 +6,7 @@
 	{#each bookData as { id, title, subtitle, imageUrl }}
 		<article class={`${id}`}>
 			{#if imageUrl}
-				<img src={imageUrl} alt="" />
+				<img src={imageUrl} alt={title} width="100%" height="100%"/>
 			{/if}
 			<h2>{title}</h2>
 			<h3>{subtitle}</h3>

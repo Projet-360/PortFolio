@@ -18,14 +18,14 @@
 
         .logo5degres {
             position: absolute;
-            height: 80vh;
+            height: 80vh !important;
             transform: rotate(20deg) translate(-400px, 150px);
             opacity: .3;
         }
 
         .visage {
             position: absolute;
-            height: 80vh;
+            height: 80vh !important;
             right: 0;
         }
 
