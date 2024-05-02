@@ -92,15 +92,15 @@
 	<PortfolioSquare {experienceData} />
 
 	<h3 class="title" bind:this={competencesTitle}>Compétences</h3>
-
+	<h4 class="subtitle">Work in progress</h4>
 	<PortfolioFifth {competencesData} />
 
 	<h3 class="title" bind:this={formationsTitle}>Formations</h3>
-
+	<h4 class="subtitle">Dans le web on ne s'arrête jamais !</h4>
 	<PortfolioFourth {formationData} />
 
 	<h3 class="title" bind:this={bookTitle}>Book</h3>
-	<h4 class="subtitle">Mes réalisations</h4>
+	<h4 class="subtitle">Quelques réalisations importantes pour moi</h4>
 
 	<PortfolioSixth {bookData} />
 

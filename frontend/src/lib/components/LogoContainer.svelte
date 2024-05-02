@@ -22,10 +22,6 @@
 
 <div class="logo-container">
 
-
-	<SvgLogo />
-
-
 	<img class="visage" src="/img/visage.webp" alt="visage" width="auto" height="80vh">
 	<h1 class="branding">
 		<span><span>Pierre</span> FABIEN</span><br />
