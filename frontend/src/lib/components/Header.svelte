@@ -2,6 +2,7 @@
 	import { gsap } from 'gsap';
 	import DarkMode from '$UITools/DarkMode/index.svelte';
 	import { t, locale, locales } from '$UITools/Translations/index';
+	import { get } from 'svelte/store';
 
 	import FullScreen from './FullScreen.svelte';
 	import { PortfolioMenuData } from '$lib/data/data';
@@ -10,7 +11,6 @@
 	import { onMount } from 'svelte';
 	import { sectionsStore } from '$stores/elementStore';
 	import smoothScrollStore from '$stores/scrollStore';
-	import { get } from 'svelte/store';
 
 	let panel: HTMLElement;
 	let contentMenu: HTMLElement;

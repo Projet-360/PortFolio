@@ -274,26 +274,6 @@ body {
   margin-top: 50px;
 }
 
-	.code-comment {
-		color: #98c379;
-	} /* Vert pour les commentaires */
-	.code-keyword {
-		color: #e692ff;
-	} /* Violet pour les mots-clés */
-	.code-string {
-		color: #e5c07b;
-	} /* Jaune pour les chaînes de caractères */
-
-
-  .code-comment { color: #76597d; } /* Couleur pour les commentaires */
-.code-async { color: #c678dd; } /* Couleur pour async/await */
-.code-variable { color: #e06c75; } /* Couleur pour les déclarations de variables */
-.code-function-util { color: #98c379; } /* Couleur pour les fonctions utilitaires */
-.code-operator { color: #56b6c2; } /* Couleur pour les opérateurs */
-
-
-
-
 .containerSlider {
   	li {
 		width: auto !important;

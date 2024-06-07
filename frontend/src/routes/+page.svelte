@@ -62,27 +62,6 @@
 >
 	<LogoContainer />
 
-	<h1 class="title axo">Les performances sur ce site ?</h1>
-
-	<p class="paragraph-custom">
-		Notez que ce site n'est pas <b>garni de technologies</b>, mais si vous souhaitez voir un
-		<b>projet plus gourmand</b>, je vous invite à visiter le site
-		<a href="http://xplicitdrink.com" target="_blank" rel="noopener noreferrer">xplicitdrink</a>, concernant ce site, il n'est pas maintenu, il peut donc avoir subi des variations avec le temps, mais je maintiens qu'à sa sortie, ce site avait obtenu d'impressionnants scores.
-		Cela consiste à ouvrir <b>l'inspecteur</b> du navigateur <b>chrome</b> et à réaliser une analyse
-		sur l'onglet
-		<b>Lighthouse</b>. Xplicitdrink dispose de technologies comme <b>ThreeJs</b> et d'autres outils
-		qui prouvent que même avec les outils les plus groumands, nous pouvons obtenir de
-		<b>bons scores</b>. Il y a aussi la possiblité de réaliser une <b>PWA</b>.
-	</p>
-
-	<img
-		class="lighthouse"
-		src="/img/LightHouse.webp"
-		alt="Analyse Lightouse le 03/04/2024"
-		width="100%"
-		height="100%"
-	/>
-
 	<h2 class="title" bind:this={profileTitle}>Profile</h2>
 
 	<PortfolioSecond {profilData} />
@@ -98,6 +77,16 @@
 	<h3 class="title" bind:this={formationsTitle}>Formations</h3>
 	<h4 class="subtitle">Dans le web on ne s'arrête jamais !</h4>
 	<PortfolioFourth {formationData} />
+
+	<h1 class="title axo">Les performances sur ce site ?</h1>
+	<img
+	class="lighthouse"
+	src="/img/LightHouse.webp"
+	alt="Analyse Lightouse le 03/04/2024"
+	width="100%"
+	height="100%"
+/>
+
 
 	<h3 class="title" bind:this={bookTitle}>Book</h3>
 	<h4 class="subtitle">Quelques réalisations importantes pour moi</h4>
