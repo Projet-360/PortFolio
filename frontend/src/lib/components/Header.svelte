@@ -40,7 +40,7 @@
 		isMenuExpanded = !isMenuExpanded;
 
 		if (isMenuExpanded) {
-			gsap.to(panel, { height: 'calc(100vh - 60px)', duration: 0.25 });
+			gsap.to(panel, { height: '100%', duration: 0.25 });
 
 			gsap.to('svg polyline', {
 				rotateX: 180
