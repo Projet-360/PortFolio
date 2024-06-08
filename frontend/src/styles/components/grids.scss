@@ -342,6 +342,9 @@ article {
     .c {
         @include portfolioItem;
         grid-area: c;
+        b {
+            color: $titleColor2;
+        }
     }
 
     article:last-of-type {

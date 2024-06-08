@@ -120,4 +120,13 @@
       }
     }
   }
+
+  .button-circle {
+    color: var(--text-color);
+    svg {
+      path {
+        stroke: var(--text-color);
+      }
+    }
+  }
 }
