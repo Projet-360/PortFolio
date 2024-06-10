@@ -5,6 +5,8 @@
 	import { enter, exit } from './transition';
 	import { onNavigate } from '$app/navigation';
 	import LogoContainer from '$components/LogoContainer.svelte';
+	import Items from '$components/Items/Items.svelte'
+
 	import PortfolioSecond from '$components/portfolio/PortfolioSecond.svelte';
 	import PortfolioSquare from '$components/portfolio/portfolioSquare.svelte';
 	import PortfolioFifth from '$components/portfolio/PortfolioFifth.svelte';
@@ -20,7 +22,6 @@
 	} from '$lib/data/data';
 	import { sectionsStore } from '$stores/elementStore';
 
-	const linkUrl: string = 'https://kit.svelte.dev';
 	let title: HTMLElement;
 	let text: HTMLElement;
 	let link: HTMLElement;
@@ -59,8 +60,10 @@
 	class="home"
 	in:enter={{ duration: 1, title, text, link }}
 	out:exit={{ duration: 1, title, text, link }}
->
+	>
 	<LogoContainer />
+
+	<Items />
 
 	<h2 class="title" bind:this={profileTitle}>Profile</h2>
 
@@ -80,12 +83,12 @@
 
 	<h1 class="title axo">Les performances sur ce site ?</h1>
 	<img
-	class="lighthouse"
-	src="/img/LightHouse.webp"
-	alt="Analyse Lightouse le 03/04/2024"
-	width="100%"
-	height="100%"
-/>
+		class="lighthouse"
+		src="/img/LightHouse.webp"
+		alt="Analyse Lightouse le 03/04/2024"
+		width="100%"
+		height="100%"
+	/>
 
 
 	<h3 class="title" bind:this={bookTitle}>Book</h3>

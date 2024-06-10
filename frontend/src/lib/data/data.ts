@@ -242,7 +242,7 @@ export let bookData = [
 	{
 		id: 'd',
 		title: 'Mon portfolio',
-		subtitle: 'Le voici, vous être devant actuellement.',
+		subtitle: 'Le voici, vous êtes devant actuellement.',
 		imageUrl: '/img/book/act.webp'
 	}
 ];
