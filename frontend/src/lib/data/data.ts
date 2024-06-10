@@ -235,7 +235,7 @@ export let bookData = [
 	},
 	{
 		id: 'c',
-		title: 'Boilerplate Sveltekit / GraphQL / NodeJs',
+		title: 'Boilerplate Sveltekit / GraphQL / NodeJs / MongoDB',
 		subtitle: `Je suis tombé amoureux de sveltekit, c'est pourquoi j'ai réalisé un boilerplate avec celui-ci`,
 		imageUrl: ''
 	},
