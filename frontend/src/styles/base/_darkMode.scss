@@ -60,11 +60,6 @@
   color: var(--text-color);
 }
 
-
-.logo5degres {
-  filter: var(--box-color) var(--dropShadow) !important;
-}
-
 .visage {
   filter: var(--box-color);
   opacity: var(--opacityVisage);
@@ -127,6 +122,24 @@
       path {
         stroke: var(--text-color);
       }
+    }
+  }
+}
+
+.itemsContainer {
+  .background-overlay {
+    background: var(--backgroundGradient);
+  }
+
+  .textWrapper {
+    h1 {
+      span {
+        color: var(--text-color);
+      }
+    }
+
+    .number {
+      color: var(--text-color);
     }
   }
 }

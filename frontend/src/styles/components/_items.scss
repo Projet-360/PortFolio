@@ -4,184 +4,273 @@
   min-height: 100vh;
   position: relative;
 
-  .background-overlay {
-    //background: linear-gradient(0deg, #04060f, #10152e);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 0;
-  }
-
   .itemsCadre {
-    @include magic-border(2px, $color-text, 1s, 1);
+    @include magic-border(2px, #1966cb5e, 1s, 1);
     width: 80%;
     max-width: 1200px;
-    height: 60vh;
+    height: 500px;
     position: absolute;
     z-index: 0;
     transform: rotate(180deg);
 
 
     svg {
-      &:first-of-type {
+      &:nth-of-type(1){
         position: absolute;
-        width: 30%;
+        width: 25%;
+        height: 100%;
+        right: 0%;
+
+        path {
+          stroke-dasharray: 100000;
+          stroke-dashoffset: 100000;
+          fill: transparent;
+          stroke: $color-text;
+          stroke-width: 10px;
+          fill:none;
+          stroke-linecap:round;
+          stroke-linejoin:round;
+          stroke-miterlimit:10;
+
+          transition: all 5s ease-out;
+    
+          &.animated {
+            stroke-dashoffset: 80000;
+            stroke: $color-text;
+            transition: all 10s ease-out;
+          }
+        }
+      }
+
+      &:nth-of-type(2){
+        position: absolute;
+        width: 25%;
+        height: 100%;
+        left: 50%;
+
+        path {
+          stroke-dasharray: 100000;
+          stroke-dashoffset: 100000;
+          fill: transparent;
+          stroke: $color-text;
+          stroke-width: 10px;
+          fill:none;
+          stroke-linecap:round;
+          stroke-linejoin:round;
+          stroke-miterlimit:10;
+
+          transition: all 5s ease-out;
+    
+          &.animated {
+            stroke-dashoffset: 90000;
+            stroke: $color-text;
+            transition: all 10s ease-out;
+          }
+        }
+      }
+
+      &:nth-of-type(3){
+        position: absolute;
+        width: 25%;
         height: 100%;
         right: 50%;
-        path {
-          stroke-dasharray: 60000;
-          stroke-dashoffset: 60000;
-        }
-      }
-
-      &:last-of-type {
-        position: absolute;
-        width: 30%;
-        height: 100%;
-        left: 0;
-
-        stroke-dasharray: 50000;
-        stroke-dashoffset: 50000;
-
-      }
 
       path {
+        stroke-dasharray: 60000;
+        stroke-dashoffset: 60000;
         fill: transparent;
-        stroke: #0c1153;
-        stroke-width: 30px;
+        stroke: $color-text;
+        stroke-width: 10px;
+        fill:none;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        stroke-miterlimit:10;
 
-        transition: all 1s ease-out;
+        transition: all 5s ease-out;
   
         &.animated {
-          stroke-dashoffset: 0;
+          stroke-dashoffset: 10000;
           stroke: $color-text;
-          transition: all 1.5s ease;
+          transition: all 10s ease-out;
         }
+      }
+      }
+
+      &:nth-of-type(4) {
+        position: absolute;
+        width: 25%;
+        height: 100%;
+        left: 0;
+
+
+      path {
+        stroke-dasharray: 50000;
+        stroke-dashoffset: 50000;
+        fill: transparent;
+        stroke: $color-text;
+        stroke-width: 10px;
+        fill:none;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        stroke-miterlimit:10;
+
+        transition: all 5s ease-out;
+  
+        &.animated {
+          stroke-dashoffset: 10000;
+          stroke: $color-text;
+          transition: all 10s ease-out;
+        }
+      }
       }
     }
   }
 
-  .itemsWrapper {
-    @include rcb;
-    width: 90vw;
-    max-width: 1300px;
 
-    .item {
-      width: 24%;
-      height: 40vh;
-      @include magic-border(2px, $color-text, 0.3s, 1);
-      transition: all 0.5s ease;
-      opacity: 0;
-
-
-      .content {
-        @include ccb;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        padding: 10px;
-        padding-bottom: 40px;
-
-        .imageContainer {
+    .itemsWrapper {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      height: 350px;
+      
+      .itemsWrapperFlex {
+        width: 90vw;
+        max-width: 1300px;
+        @include rtb;
+        
+      .item {
+        width: 24%;
+        height: 350px;
+        @include magic-border(2px, $color-text, 0.3s, 1);
+        transition: height 0.5s ease-in-out;
+        opacity: 0;
+  
+  
+        .content {
+          @include ccb;
           position: absolute;
+          width: 100%;
+          height: 100%;
+          padding: 10px;
+          padding-bottom: 40px;
           overflow: hidden;
-          width: calc(100% - 20px);
-          height: 0%;
-          transition: height 0.5s ease;
-          z-index: 20;
-          .image {
+  
+          .imageContainer {
             position: absolute;
-            width: auto;
-            height: 40vh;
-            object-fit: cover;
+            overflow: hidden;
+            width: calc(100% - 20px);
+            height: 340px;
+            z-index: 20;
+            pointer-events: none;
+
+            .image {
+              position: absolute;
+              object-fit: cover;
+              height: 100%;
+              width: 100%;
+              transform: translateY(-100%) scale(1);
+              transition: transform 0.5s ease-in-out;
+            }
           }
-        }
-
-        .arrowContainer {
-          @include ccc;
-          overflow: hidden;
-          width: 8px;
-          height: 8px;
-
-          .arrow {
+  
+          .arrowContainer {
+            @include ccc;
+            overflow: hidden;
             width: 8px;
             height: 8px;
-            fill: white;
+  
+            .arrow {
+              width: 8px;
+              height: 8px;
+              fill: white;
+            }
           }
-        }
-
-        .logoContainer {
-          @include ccc;
-          width: 15vh;
-
-          .logo {
-            width: 80px;
-            height: 80px;
+  
+          .logoContainer {
+            @include ccc;
+            width: 15vh;
+  
+            .logo {
+              width: 80px;
+              height: 80px;
+            }
           }
-        }
-
-        span {
-          font-size: 20px;
-          color: white;
-          text-transform: uppercase;
-        }
-
-        h1 {
-          @include ccc;
-          overflow: hidden;
+  
           span {
-            color: white;
+            font-size: 20px;
             text-transform: uppercase;
-            font-family: 'Raleway', sans-serif;
+          }
+  
+          h1 {
+            @include ccc;
+            overflow: hidden;
+            span {
+              text-transform: uppercase;
+              font-family: 'Raleway', sans-serif;
+            }
+          }
+  
+          .numberContainer {
+            @include ccc;
+            overflow: hidden;
+            .number {
+              font-weight: 500;
+              font-family: 'Raleway', sans-serif;
+              transition: color 0.5s ease;
+            }
+          }
+
+          .contentBand {
+            position: absolute;
+            bottom: -2px;
+            width: 30%;
+            height: 2px;
+            background: $color-text;
+            transition: all .5s ease;
           }
         }
+  
+        .background-overlay {
+          position: absolute;
+          z-index: 0;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          //background: linear-gradient(0deg, #010207, #10152e);
+          opacity: 0;
+          transition: opacity 0.4s ease-out 0.6s;
+        }
+  
+        &.animated {
+          opacity: 1;
+        }
+        
+        &.animated .background-overlay {
+          opacity: 1;
+          transition: all 0.2s linear;
+        }
+  
+        &:hover {
+          height: calc(350px + 150px);
+  
+          .imageContainer {
+            .image {
+              transform: translateY(0%);
+            }
+          }
 
-        .numberContainer {
-          @include ccc;
-          overflow: hidden;
+          .contentBand {
+            bottom: 0px;
+          }
+  
           .number {
-            color: white;
-            font-weight: 500;
-            font-family: 'Raleway', sans-serif;
-            transition: color 0.5s ease;
+            color: $color-text !important;
           }
-        }
-      }
-
-      .background-overlay {
-        position: absolute;
-        z-index: 0;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(0deg, #010207, #10152e);
-        opacity: 0;
-        transition: opacity 0.4s ease-out 0.6s;
-      }
-
-      &.animated {
-        opacity: 1;
-      }
-      
-      &.animated .background-overlay {
-        opacity: 1;
-        transition: all 0s linear;
-      }
-
-      &:hover {
-        height: calc(40vh + 100px);
-
-        .imageContainer {
-          height: 70%;
-        }
-
-        .number {
-          color: $color-text !important;
         }
       }
     }
   }
+
 }

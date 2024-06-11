@@ -37,7 +37,7 @@
 		const smoothScroll = get(smoothScrollStore);
 
 		if (section && smoothScroll) {
-			const sectionTop = sectionElement.offsetTop
+			const sectionTop = sectionElement.offsetTop + 70
 			smoothScroll.scrollTo(0, sectionTop, 1000); // 1000 est la durée en ms
 		} else {
 			console.warn(`Section non trouvée ou smoothScroll non initialisé.`);
