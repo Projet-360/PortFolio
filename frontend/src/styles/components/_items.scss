@@ -20,26 +20,6 @@
         width: 25%;
         height: 100%;
         right: 0%;
-
-        path {
-          stroke-dasharray: 100000;
-          stroke-dashoffset: 100000;
-          fill: transparent;
-          stroke: $color-text;
-          stroke-width: 10px;
-          fill:none;
-          stroke-linecap:round;
-          stroke-linejoin:round;
-          stroke-miterlimit:10;
-
-          transition: all 5s ease-out;
-    
-          &.animated {
-            stroke-dashoffset: 80000;
-            stroke: $color-text;
-            transition: all 10s ease-out;
-          }
-        }
       }
 
       &:nth-of-type(2){
@@ -47,26 +27,6 @@
         width: 25%;
         height: 100%;
         left: 50%;
-
-        path {
-          stroke-dasharray: 100000;
-          stroke-dashoffset: 100000;
-          fill: transparent;
-          stroke: $color-text;
-          stroke-width: 10px;
-          fill:none;
-          stroke-linecap:round;
-          stroke-linejoin:round;
-          stroke-miterlimit:10;
-
-          transition: all 5s ease-out;
-    
-          &.animated {
-            stroke-dashoffset: 90000;
-            stroke: $color-text;
-            transition: all 10s ease-out;
-          }
-        }
       }
 
       &:nth-of-type(3){
@@ -74,38 +34,19 @@
         width: 25%;
         height: 100%;
         right: 50%;
-
-      path {
-        stroke-dasharray: 60000;
-        stroke-dashoffset: 60000;
-        fill: transparent;
-        stroke: $color-text;
-        stroke-width: 10px;
-        fill:none;
-        stroke-linecap:round;
-        stroke-linejoin:round;
-        stroke-miterlimit:10;
-
-        transition: all 5s ease-out;
-  
-        &.animated {
-          stroke-dashoffset: 10000;
-          stroke: $color-text;
-          transition: all 10s ease-out;
-        }
       }
-      }
+      
 
       &:nth-of-type(4) {
         position: absolute;
         width: 25%;
         height: 100%;
         left: 0;
-
+      }
 
       path {
-        stroke-dasharray: 50000;
-        stroke-dashoffset: 50000;
+        stroke-dasharray: 10000;
+        stroke-dashoffset: 10000;
         fill: transparent;
         stroke: $color-text;
         stroke-width: 10px;
@@ -114,14 +55,13 @@
         stroke-linejoin:round;
         stroke-miterlimit:10;
 
-        transition: all 5s ease-out;
+        transition: all 2s ease-out;
   
         &.animated {
-          stroke-dashoffset: 10000;
+          stroke-dashoffset: 0;
           stroke: $color-text;
-          transition: all 10s ease-out;
+          transition: all 6s ease-out;
         }
-      }
       }
     }
   }
