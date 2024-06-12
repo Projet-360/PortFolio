@@ -150,10 +150,10 @@
 
 <div class="itemsContainer" id="itemsContainer" bind:this={fullContainer}>
   <div class="itemsCadre" bind:this="{itemsCadre}">
-    <First animated={animatedSVGFirst} />
-    <Second animated={animatedSVGSecond} />
-    <Third animated={animatedSVGThird} />
-    <Fourth animated={animatedSVGFourth} />
+    <div class="itemsCadreContainer"> <First animated={animatedSVGFirst} /> </div>
+    <div class="itemsCadreContainer"> <Second animated={animatedSVGSecond} /> </div>
+    <div class="itemsCadreContainer"> <Third animated={animatedSVGThird} /> </div>
+    <div class="itemsCadreContainer"> <Fourth animated={animatedSVGFourth} /> </div>
   </div>
 
   <div class="itemsWrapper">

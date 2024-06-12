@@ -4,7 +4,7 @@
   </script>
   
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-viewBox="0 0 3000 5000" style="enable-background:new 0 0 3000 5000;" xml:space="preserve">
+viewBox="0 0 3000 5000" style="enable-background:new 0 0 3000 5000;" xml:space="preserve" preserveAspectRatio="xMidYMid meet">
 <g>
 <path class="{animated ? 'animated' : ''}" d="M434,5000c-29.33,0-58.67,0-88,0c-2.66-1.55-4.55-3.74-6.07-6.43c-23.89-42.32-48.32-84.34-72.3-126.61
    c-0.82-1.45-1.73-2.86-2.44-4.36c-6.37-13.52-16.19-19.32-31.84-18.38c-22.24,1.34-44.62,0.17-66.93,0.43
