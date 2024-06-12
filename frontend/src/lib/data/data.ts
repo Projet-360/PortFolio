@@ -1,6 +1,6 @@
 export let PortfolioMenuData: any[] = [
 	{
-		id: 'profile',
+		id: 'profil',
 		title: 'Profil',
 		position: 'a',
 		content: 'Découvrez les informations générales sur mon profil.'
@@ -60,10 +60,9 @@ export let profilData = [
 		id: 'c',
 		title: 'Le chemin vers le front-end:',
 		paragraphs: [
-			`Depuis mes débuts dans la <b>création multimédia</b> en 2010, j'ai entrepris un voyage continu vers l'innovation, explorant les intersections entre la technologie et la <b>créativité</b>. Initialement fasciné par des outils comme <b>Photoshop</b>, <b>Illustrator</b> et <b>After Effects</b>, j'ai rapidement trouvé ma voie dans le développement web. De <b>WordPress</b> à <b>Symfony</b>, en passant par <b>ReactJS & NextJs</b> et récemment <b>SvelteKit/GraphQL/NodeJS</b>, chaque nouvelle technologie a enrichi mes compétences et nourri ma passion pour la création numérique.`,
-			`Mon engagement envers l'innovation s'étend au-delà du développement web. Mes récentes expériences avec <b>Three.js</b>, guidées par des experts comme <b>Bruno Simon</b>, m'ont ouvert de nouveaux horizons dans l'exploration d'expériences utilisateur <b>immersives en 3D</b>. Cette démarche vise à repousser les limites de <b>l'interaction</b> utilisateur sur le web en mariant <b>esthétique visuelle</b> et fonctionnalité de manière inattendue.`,
-			`Cherchant à continuellement élargir mes compétences, j'ai consolidé mon rôle de développeur frontend chez Hubeecar, où j'ai approfondi ma maîtrise de <b>TypeScript</b>, <b>ReactJS</b> et <b>GraphQL</b>. J'ai ainsi développé un ensemble de compétences intégrées, essentielles pour créer des solutions web qui anticipent les besoins des utilisateurs plutôt que d'y répondre a posteriori.`,
-			`Grâce au développement d'un <b>boilerplate créatif</b>, j'ai jeté les bases d'une approche <b>holistique</b> du développement web, combinant expertise <b>frontend</b> et <b>backend</b> pour créer des applications web complètes, <b>performantes et sécurisées</b>. Je suis impatient de mettre cette expérience au service de nouveaux défis, de collaborer avec des esprits passionnés et de contribuer à des projets qui redéfinissent les normes en matière d'expérience utilisateur.`
+			`Depuis mes débuts dans la <b>création multimédia</b> en 2010, j'ai entrepris un voyage continu vers l'innovation, explorant les intersections entre la technologie et la <b>créativité</b>. Initialement fasciné par des outils comme <b>Photoshop</b>, <b>Illustrator</b> et <b>After Effects</b>, j'ai rapidement trouvé ma voie dans le développement web. De <b>WordPress</b> à <b>Symfony</b>, suivi de <b>ReactJS & NextJs</b> et récemment <b>SvelteKit, GraphQL</b> avec <b>NodeJs</b>, chaque nouvelle technologie a enrichi mes compétences et nourri ma passion pour la création numérique.`,
+			`Cherchant à continuellement élargir mes compétences, j'ai consolidé mon rôle de développeur frontend, j'ai approfondi ma maîtrise de <b>TypeScript</b>, <b>ReactJS</b> et <b>GraphQL</b>. J'ai ainsi développé un ensemble de compétences intégrées, essentielles pour créer des solutions web qui anticipent les besoins des utilisateurs plutôt que d'y répondre a posteriori.`,
+			`Grâce au développement d'un <b>boilerplate créatif</b>, j'ai jeté les bases d'une approche <b>holistique</b> du développement web, combinant expertise <b>frontend</b> et <b>backend</b> pour créer des applications web complètes, <b>performantes et sécurisées</b>.`
 		]
 	}
 ];

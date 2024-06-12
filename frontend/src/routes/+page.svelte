@@ -21,6 +21,7 @@
 		experienceData
 	} from '$lib/data/data';
 	import { sectionsStore } from '$stores/elementStore';
+	import Lines from '$components/Lines.svelte';
 
 	let title: HTMLElement;
 	let text: HTMLElement;
@@ -31,7 +32,7 @@
 		path = navigation.to?.route.id;
 	});
 
-	let profileTitle: HTMLElement;
+	let profilTitle: HTMLElement;
 	let experiencesTitle: HTMLElement;
 	let formationsTitle: HTMLElement;
 	let competencesTitle: HTMLElement;
@@ -41,7 +42,7 @@
 		setTransitionLoader(false);
 
 		sectionsStore.update((sections) => {
-			sections.set('profile', profileTitle);
+			sections.set('profil', profilTitle);
 			sections.set('experiences', experiencesTitle);
 			sections.set('formations', formationsTitle);
 			sections.set('competences', competencesTitle);
@@ -61,11 +62,11 @@
 	in:enter={{ duration: 1, title, text, link }}
 	out:exit={{ duration: 1, title, text, link }}
 	>
+	<Lines />
+
 	<LogoContainer />
 
 	<Items />
-
-	<h2 class="title" bind:this={profileTitle}>Profile</h2>
 
 	<PortfolioSecond {profilData} />
 

@@ -151,6 +151,10 @@
               width: 80px;
               height: 80px;
             }
+
+            svg {
+              fill: $color-text;
+            }
           }
   
           span {

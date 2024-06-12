@@ -11,6 +11,10 @@
   import Fourth from './svg/Fourth.svelte'
 	import Third from './svg/Third.svelte';
 	import Second from './svg/Second.svelte';
+	import Design from './icon/Design.svelte';
+	import Frontend from './icon/Frontend.svelte';
+	import Backend from './icon/Backend.svelte';
+	import SoftSkill from './icon/SoftSkill.svelte';
 
   // Référence pour chaque item
   let items: HTMLElement[] = []
@@ -167,7 +171,7 @@
           <div class="imageContainer">
             <img
               class="image"
-              src="https://img.freepik.com/free-vector/topographic-map-concept_23-2148598310.jpg?t=st=1717471874~exp=1717475474~hmac=eff7b42c9cb7f1c05d35efc2388178916c3e3aefc541da0857d9e9cebb2d3e6f&w=1380"
+              src="/img/items/design.png"
               alt=""
               srcset=""
             />
@@ -179,7 +183,7 @@
             </span>
           </div>
           <div class="logoContainer" bind:this="{logos[0]}">
-            <Logo />
+            <Design />
           </div>
           <span>.</span>
           <div class="textWrapper">
@@ -203,7 +207,7 @@
           <div class="imageContainer">
             <img
               class="image"
-              src="https://img.freepik.com/free-vector/Fourthgraphic-map-concept_23-2148598310.jpg?t=st=1717471874~exp=1717475474~hmac=eff7b42c9cb7f1c05d35efc2388178916c3e3aefc541da0857d9e9cebb2d3e6f&w=1380"
+              src="/img/items/frontend.png"
               alt=""
               srcset=""
             />
@@ -214,7 +218,7 @@
             </span>
           </div>
           <div class="logoContainer" bind:this="{logos[1]}">
-            <Logo />
+            <Frontend />
           </div>
           <span>.</span>
           <div class="textWrapper">
@@ -238,7 +242,7 @@
           <div class="imageContainer">
             <img
               class="image"
-              src="https://static.david-david-studio.com/image/vignette1/24613.jpg"
+              src="/img/items/backend.png"
               alt=""
               srcset=""
             />
@@ -249,7 +253,7 @@
             </span>
           </div>
           <div class="logoContainer" bind:this="{logos[2]}">
-            <Logo />
+            <Backend />
           </div>
           <span>.</span>
           <div class="textWrapper">
@@ -274,7 +278,7 @@
           <div class="imageContainer">
             <img
               class="image"
-              src="https://image.slidesdocs.com/responsive-images/background/gradient-abstract-terrain-mapped-in-3d-topographic-grid-powerpoint-background_11b38aaf33__960_540.jpg"
+              src="/img/items/softSkill.png"
               alt=""
               srcset=""
             />
@@ -285,7 +289,7 @@
             </span>
           </div>
           <div class="logoContainer" bind:this="{logos[3]}">
-            <Logo />
+            <SoftSkill />
           </div>
           <span>.</span>
           <div class="textWrapper">
