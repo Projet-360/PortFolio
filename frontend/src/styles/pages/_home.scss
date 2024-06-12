@@ -47,15 +47,26 @@
             right: 0;
             width: 200px;
             height: 200px;
-            transform: translateX(100%) translateY(-10%) scale(1);
+            
+            transform: translateX(0%) translateY(0%) scale(1);
             background: none;
             border: none;
             outline: none;
             transition: all 0.5s ease;
 
+            @include breakpointMin(tablet_portrait_max) {
+                transform: translateX(100%) translateY(-10%) scale(1);
+
+                &:hover {
+                    cursor: pointer;
+                    
+                    transform: translateX(100%) translateY(-10%) scale(1.5);
+                }
+              }
+
             &:hover {
                 cursor: pointer;
-                transform: translateX(100%) translateY(-10%) scale(1.5);
+                transform: translateX(0%) translateY(0%) scale(1.5);
             }
 
             svg {
