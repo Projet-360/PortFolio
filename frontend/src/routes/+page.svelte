@@ -25,9 +25,6 @@
 	import { sectionsStore } from '$stores/elementStore';
 	import Lines from '$components/Lines.svelte';
 
-	onNavigate((navigation) => {
-		path = navigation.to?.route.id;
-	});
 
 	let profilTitle: HTMLElement;
 	let experiencesTitle: HTMLElement;
