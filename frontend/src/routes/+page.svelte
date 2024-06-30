@@ -63,7 +63,6 @@
 	class="home"
 	>
 
-	<p style="color: white;" bind:this={text}>{@html $t('general.language')}</p>
 	<Lines />
 
 	<LogoContainer />
