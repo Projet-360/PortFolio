@@ -2,7 +2,6 @@
 	import { onMount } from 'svelte';
 
 	import { setTransitionLoader } from '$lib/stores/transitionLoaderStore';
-	import { enter, exit } from './transition';
 	import { onNavigate } from '$app/navigation';
 	import LogoContainer from '$components/LogoContainer.svelte';
 	import Items from '$components/Items/Items.svelte'
@@ -62,8 +61,6 @@
 
 <div
 	class="home"
-	in:enter={{ duration: 1, title, text, link }}
-	out:exit={{ duration: 1, title, text, link }}
 	>
 
 	<p style="color: white;" bind:this={text}>{@html $t('general.language')}</p>
