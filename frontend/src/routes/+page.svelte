@@ -54,8 +54,8 @@
 <div
 	class="home"
 	>
-
-	<p style="color: white;">{@html $t('general.language')}</p>
+<!-- 
+	<p style="color: white;">{@html $t('general.language')}</p> -->
 	<Lines />
 
 	<LogoContainer />
