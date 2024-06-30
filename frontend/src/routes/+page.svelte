@@ -25,11 +25,6 @@
 	import { sectionsStore } from '$stores/elementStore';
 	import Lines from '$components/Lines.svelte';
 
-	let title: HTMLElement;
-	let text: HTMLElement;
-	let link: HTMLElement;
-	let path: string;
-
 	onNavigate((navigation) => {
 		path = navigation.to?.route.id;
 	});
@@ -63,6 +58,7 @@
 	class="home"
 	>
 
+	<p style="color: white;">{@html $t('general.language')}</p>
 	<Lines />
 
 	<LogoContainer />

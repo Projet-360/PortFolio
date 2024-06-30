@@ -52,7 +52,7 @@
     
         &:before {
         content: ' ';
-        background-image: url('/background.svg');
+        background-image: url('img/background.svg');
         transform: translateY(120px) translateX(var(--before));
         width: 1000%;
         height: 60px;
