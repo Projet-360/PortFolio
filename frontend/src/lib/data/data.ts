@@ -35,6 +35,38 @@ export let PortfolioMenuData: any[] = [
 	}
 ];
 
+export let DesignData = [
+	{
+		id: 'a',
+		title: 'Design',
+		paragraphs: []
+	},
+	{
+		id: 'b',
+		title: 'Librairies',
+		paragraphs: [
+			'<b>Template :</b>',
+			'ReactJS & NextJs',
+			'Svelte & SvelteKit',
+			'<b>Animation :</b>',
+			'GSAP, ScrollTrigger',
+			'ThreeJS',
+			'<b>API :</b>',
+			'GraphQL',
+			'API RESTful'
+		]
+	},
+	{
+		id: 'c',
+		title: 'Le DESIGN avant tout :',
+		paragraphs: [
+			`Depuis mes débuts dans la <b>création multimédia</b> en 2010, j'ai entrepris un voyage continu vers l'innovation, explorant les intersections entre la technologie et la <b>créativité</b>. Initialement fasciné par des outils comme <b>Photoshop</b>, <b>Illustrator</b> et <b>After Effects</b>, j'ai rapidement trouvé ma voie dans le développement web. De <b>WordPress</b> à <b>Symfony</b>, suivi de <b>ReactJS & NextJs</b> et récemment <b>SvelteKit, GraphQL</b> avec <b>NodeJs</b>, chaque nouvelle technologie a enrichi mes compétences et nourri ma passion pour la création numérique.`,
+			`Cherchant à continuellement élargir mes compétences, j'ai consolidé mon rôle de développeur frontend, j'ai approfondi ma maîtrise de <b>TypeScript</b>, <b>ReactJS</b> et <b>GraphQL</b>. J'ai ainsi développé un ensemble de compétences intégrées, essentielles pour créer des solutions web qui anticipent les besoins des utilisateurs plutôt que d'y répondre a posteriori.`,
+			`Grâce au développement d'un <b>boilerplate créatif</b>, j'ai jeté les bases d'une approche <b>holistique</b> du développement web, combinant expertise <b>frontend</b> et <b>backend</b> pour créer des applications web complètes, <b>performantes et sécurisées</b>.`
+		]
+	}
+];
+
 export let profilData = [
 	{
 		id: 'a',
@@ -43,17 +75,17 @@ export let profilData = [
 	},
 	{
 		id: 'b',
-		title: 'Générale',
+		title: 'Librairies',
 		paragraphs: [
-			'<b>Nom:</b> FABIEN',
-			'<b>Prénom:</b> Pierre',
-			'<b>Sex:</b> Masculin',
-			'<b>Date de naissance:</b> 22.07.1993',
-			'<b>Nationalité:</b> Française',
-			'<b>Lieu de naissance:</b> Montauban',
-			'<b>Lieu habitation:</b> Toulouse, Jolimont',
-			'<b>Permis:</b> catégorie B',
-			'<b>Loisir:</b> Skate/Snow, production musicale'
+			'<b>Template :</b>',
+			'ReactJS & NextJs',
+			'Svelte & SvelteKit',
+			'<b>Animation :</b>',
+			'GSAP, ScrollTrigger',
+			'ThreeJS',
+			'<b>API :</b>',
+			'GraphQL',
+			'API RESTful'
 		]
 	},
 	{
@@ -240,8 +272,8 @@ export let bookData = [
 	},
 	{
 		id: 'd',
-		title: 'Mon portfolio',
-		subtitle: 'Le voici, vous êtes devant actuellement.',
+		title: 'Boilerplate Sveltekit / Supabase / Vercel',
+		subtitle: 'Pour les petit pas chere pour le client. (10€ par ans)',
 		imageUrl: '/img/book/act.webp'
 	}
 ];

@@ -6,6 +6,7 @@
 	import { onNavigate } from '$app/navigation';
 	import LogoContainer from '$components/LogoContainer.svelte';
 	import Items from '$components/Items/Items.svelte'
+	import { t } from '$UITools/Translations/index.js';
 
 	import PortfolioSecond from '$components/portfolio/PortfolioSecond.svelte';
 	import PortfolioSquare from '$components/portfolio/portfolioSquare.svelte';
@@ -18,7 +19,9 @@
 		formationData,
 		profilData,
 		bookData,
-		experienceData
+		experienceData,
+		DesignData
+
 	} from '$lib/data/data';
 	import { sectionsStore } from '$stores/elementStore';
 	import Lines from '$components/Lines.svelte';
@@ -62,13 +65,18 @@
 	in:enter={{ duration: 1, title, text, link }}
 	out:exit={{ duration: 1, title, text, link }}
 	>
+
+	<p style="color: white;" bind:this={text}>{@html $t('general.language')}</p>
 	<Lines />
 
 	<LogoContainer />
 
 	<Items />
 
-	<PortfolioSecond {profilData} />
+	<PortfolioSecond profilData={DesignData} />
+
+	<!-- <PortfolioSecond {profilData} /> -->
+
 
 	<h3 class="title" bind:this={experiencesTitle}>Experiences</h3>
 

@@ -152,12 +152,12 @@
 
 		<div class="left-side">
 			
-			<!-- <label for="localeSelect">{$t('general.language')}</label>
+			<label for="localeSelect">{$t('general.language')}</label>
 			<select id="localeSelect" name="locale" bind:value={$locale} on:change={handleChangeLang}>
 				{#each $locales as value}
 					<option {value}>{$t(`lang.${value}`)}</option>
 				{/each}
-			</select> -->
+			</select>
 
 			<DarkMode />
 
