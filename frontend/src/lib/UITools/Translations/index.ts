@@ -19,101 +19,13 @@ export const config = {
 			key: 'general',
 			loader: async () => (await import('./en/general.json')).default
 		},
-		{
-			locale: 'en',
-			key: 'about',
-			loader: async () => (await import('./en/about.json')).default
-		},
-		{
-			locale: 'en',
-			key: 'home',
-			loader: async () => (await import('./en/home.json')).default
-		},
-		{
-			locale: 'en',
-			key: 'login',
-			loader: async () => (await import('./en/login.json')).default
-		},
-		{
-			locale: 'en',
-			key: 'logout',
-			loader: async () => (await import('./en/logout.json')).default
-		},
-		{
-			locale: 'en',
-			key: 'signup',
-			loader: async () => (await import('./en/signup.json')).default
-		},
-		{
-			locale: 'en',
-			key: 'forgot-password',
-			loader: async () => (await import('./en/forgot-password.json')).default
-		},
-		{
-			locale: 'en',
-			key: 'forgot-password-token',
-			loader: async () => (await import('./en/forgot-password-token.json')).default
-		},
-		{
-			locale: 'en',
-			key: 'user',
-			loader: async () => (await import('./en/user.json')).default
-		},
-		{
-			locale: 'en',
-			key: 'validation',
-			loader: async () => (await import('./en/validation.json')).default
-		},
+		
 		{
 			locale: 'fr',
 			key: 'general',
 			loader: async () => (await import('./fr/general.json')).default
 		},
-		{
-			locale: 'fr',
-			key: 'about',
-			loader: async () => (await import('./fr/about.json')).default
-		},
-		{
-			locale: 'fr',
-			key: 'home',
-			loader: async () => (await import('./fr/home.json')).default
-		},
-		{
-			locale: 'fr',
-			key: 'login',
-			loader: async () => (await import('./fr/login.json')).default
-		},
-		{
-			locale: 'fr',
-			key: 'logout',
-			loader: async () => (await import('./fr/logout.json')).default
-		},
-		{
-			locale: 'fr',
-			key: 'signup',
-			loader: async () => (await import('./fr/signup.json')).default
-		},
-		{
-			locale: 'fr',
-			key: 'forgot-password',
-			loader: async () => (await import('./fr/forgot-password.json')).default
-		},
-		{
-			locale: 'fr',
-			key: 'forgot-password-token',
-			loader: async () => (await import('./fr/forgot-password-token.json')).default
-		},
-		{
-			locale: 'fr',
-			key: 'user',
-			loader: async () => (await import('./fr/user.json')).default
-		},
-		{
-			locale: 'fr',
-			key: 'validation',
-			loader: async () => (await import('./fr/validation.json')).default
-		}
+		
 	]
 };
 
