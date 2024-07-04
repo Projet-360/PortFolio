@@ -61,7 +61,7 @@
 	<LogoContainer />
 
 	<Items />
-
+	<h3 class="title" bind:this={profilTitle}>Profil</h3>
 	<PortfolioSecond profilData={DesignData} />
 
 	<!-- <PortfolioSecond {profilData} /> -->

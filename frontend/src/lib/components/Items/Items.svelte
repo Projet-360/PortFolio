@@ -1,5 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte'
+  import { get } from 'svelte/store';
+	import smoothScrollStore from '$stores/scrollStore';
   import { gsap } from 'gsap/dist/gsap';
   import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 	import { sectionsStore } from '$stores/elementStore';
@@ -150,6 +152,26 @@
   function animatedSVGThirdMouseLeave() {
     animatedSVGThird = false;
   }
+
+  function scrollTo(section: string) {
+    console.log(section, 'section');
+    
+		const sectionElement = $sectionsStore.get(section);
+
+		const smoothScroll = get(smoothScrollStore);
+
+    console.log(sectionElement, 'sectionElement');
+    
+
+		if (section && smoothScroll) {
+			const sectionTop = sectionElement.offsetTop - 70
+			smoothScroll.scrollTo(0, sectionTop, 500); // 1000 est la durée en ms
+		} else {
+			console.warn(`Section non trouvée ou smoothScroll non initialisé.`);
+		}
+	}
+
+ 
 </script>
 
 <div class="itemsContainer" id="itemsContainer" bind:this={fullContainer}>
@@ -162,10 +184,14 @@
 
   <div class="itemsWrapper">
     <div class="itemsWrapperFlex" bind:this="{itemsWrapper}">
-      <div class="item" bind:this="{items[0]}" on:mouseenter="{() => animatedSVGFirst = true}"
-        on:mouseleave="{animatedSVGFirstMouseLeave}"
-        role="button"
-        tabindex="1">
+      <div class="item" 
+          bind:this="{items[0]}"
+          on:mouseenter="{() => animatedSVGFirst = true}"
+          on:click={(event) => { scrollTo('profil'); }}
+          on:keydown={null}
+          on:mouseleave="{animatedSVGFirstMouseLeave}"
+          role="button"
+          tabindex="0">
         <div class="background-overlay"></div>
         <div class="content">
           <div class="imageContainer">
@@ -188,7 +214,7 @@
           <span>.</span>
           <div class="textWrapper">
             <h1>
-              <span bind:this="{texts[0]}"> Design </span>
+              <span bind:this="{texts[0]}"> Profil </span>
             </h1>
             <div class="numberContainer">
               <p class="number" bind:this="{numbers[0]}">01</p>
@@ -198,10 +224,14 @@
         </div>
       </div>
 
-      <div class="item" bind:this="{items[1]}" on:mouseenter="{() => animatedSVGSecond = true}"
-        on:mouseleave="{animatedSVGSecondMouseLeave}"
-        role="button"
-        tabindex="2">
+      <div class="item"
+          bind:this="{items[1]}"
+          on:mouseenter="{() => animatedSVGSecond = true}"
+          on:click={(event) => { scrollTo('experiences'); }}
+          on:mouseleave="{animatedSVGSecondMouseLeave}"
+          on:keydown={null}
+          role="button"
+          tabindex="1">
         <div class="background-overlay"></div>
         <div class="content">
           <div class="imageContainer">
@@ -223,7 +253,7 @@
           <span>.</span>
           <div class="textWrapper">
             <h1>
-              <span bind:this="{texts[1]}"> FrontEnd </span>
+              <span bind:this="{texts[1]}"> Expérience </span>
             </h1>
             <div class="numberContainer">
               <p class="number" bind:this="{numbers[1]}">02</p>
@@ -233,10 +263,14 @@
         </div>
       </div>
 
-      <div class="item" bind:this="{items[2]}" on:mouseenter="{() => animatedSVGThird = true}"
-        on:mouseleave="{animatedSVGThirdMouseLeave}"
-        role="button"
-        tabindex="3">
+      <div class="item"
+          bind:this="{items[2]}"
+          on:mouseenter="{() => animatedSVGThird = true}" 
+          on:click={(event) => { scrollTo('competences'); }}
+          on:mouseleave="{animatedSVGThirdMouseLeave}"
+          on:keydown={null}
+          role="button"
+          tabindex="2">
         <div class="background-overlay"></div>
         <div class="content">
           <div class="imageContainer">
@@ -258,7 +292,7 @@
           <span>.</span>
           <div class="textWrapper">
             <h1>
-              <span bind:this="{texts[2]}"> BackEnd </span>
+              <span bind:this="{texts[2]}"> Compétences </span>
             </h1>
             <div class="numberContainer">
               <p class="number" bind:this="{numbers[2]}">03</p>
@@ -268,10 +302,14 @@
         </div>
       </div>
 
-      <div class="item" bind:this="{items[3]}" on:mouseenter="{() => animatedSVGFourth = true}"
-        on:mouseleave="{animatedSVGFourthMouseLeave}"
-        role="button"
-        tabindex="4"
+      <div class="item"
+          bind:this="{items[3]}"
+          on:mouseenter="{() => animatedSVGFourth = true}"
+          on:click={(event) => { scrollTo('book'); }}
+          on:mouseleave="{animatedSVGFourthMouseLeave}"
+          on:keydown={null}
+          role="button"
+          tabindex="3"
       >
         <div class="background-overlay"></div>
         <div class="content">
@@ -294,7 +332,7 @@
           <span>.</span>
           <div class="textWrapper">
             <h1>
-              <span bind:this="{texts[3]}"> SoftSkills </span>
+              <span bind:this="{texts[3]}"> Book </span>
             </h1>
             <div class="numberContainer">
               <p class="number" bind:this="{numbers[3]}">04</p>

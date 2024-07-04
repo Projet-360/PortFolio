@@ -213,6 +213,7 @@
         }
   
         &:hover {
+          cursor: pointer;
           height: calc(350px + 150px);
   
           .imageContainer {

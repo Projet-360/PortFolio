@@ -1,10 +1,12 @@
 .containerLines {
     width: 100vw;
-    height: 150vh;
+    height: 160vh;
     position: absolute;
     overflow: hidden;
     z-index: 0;
+    pointer-events: none;
     top: 150vh;
+    
 
 .background {
     position: absolute;
@@ -28,7 +30,7 @@
     .line {
         background-image: url("img/background.svg");
         width: 1000%;
-        height: 120px;
+        height: 180px;
         transition: all 2s ease-out;
         will-change: transform;
         background-size: 560px auto;

@@ -38,27 +38,31 @@ export let PortfolioMenuData: any[] = [
 export let DesignData = [
 	{
 		id: 'a',
-		title: 'Design',
+		title: 'Profil',
 		paragraphs: []
 	},
 	{
 		id: 'b',
 		title: 'Librairies',
 		paragraphs: [
-			'<b>Template :</b>',
+			'<b>Front-end :</b>',
 			'ReactJS & NextJs',
 			'Svelte & SvelteKit',
+
 			'<b>Animation :</b>',
-			'GSAP, ScrollTrigger',
+			'GSAP',
 			'ThreeJS',
-			'<b>API :</b>',
+
+			'<b>Backend :</b>',
 			'GraphQL',
-			'API RESTful'
+			'API REST',
+			'Nodejs',
+			'MongoDb',
 		]
 	},
 	{
 		id: 'c',
-		title: 'Le DESIGN avant tout :',
+		title: 'Le chemin vers le front-end:',
 		paragraphs: [
 			`Depuis mes débuts dans la <b>création multimédia</b> en 2010, j'ai entrepris un voyage continu vers l'innovation, explorant les intersections entre la technologie et la <b>créativité</b>. Initialement fasciné par des outils comme <b>Photoshop</b>, <b>Illustrator</b> et <b>After Effects</b>, j'ai rapidement trouvé ma voie dans le développement web. De <b>WordPress</b> à <b>Symfony</b>, suivi de <b>ReactJS & NextJs</b> et récemment <b>SvelteKit, GraphQL</b> avec <b>NodeJs</b>, chaque nouvelle technologie a enrichi mes compétences et nourri ma passion pour la création numérique.`,
 			`Cherchant à continuellement élargir mes compétences, j'ai consolidé mon rôle de développeur frontend, j'ai approfondi ma maîtrise de <b>TypeScript</b>, <b>ReactJS</b> et <b>GraphQL</b>. J'ai ainsi développé un ensemble de compétences intégrées, essentielles pour créer des solutions web qui anticipent les besoins des utilisateurs plutôt que d'y répondre a posteriori.`,
@@ -77,22 +81,26 @@ export let profilData = [
 		id: 'b',
 		title: 'Librairies',
 		paragraphs: [
-			'<b>Template :</b>',
+			'<b>Front-end :</b>',
 			'ReactJS & NextJs',
 			'Svelte & SvelteKit',
+
 			'<b>Animation :</b>',
-			'GSAP, ScrollTrigger',
+			'GSAP',
 			'ThreeJS',
-			'<b>API :</b>',
+
+			'<b>Backend :</b>',
 			'GraphQL',
-			'API RESTful'
+			'Nodejs',
+			'MongoDB',
+			'Prisma'
 		]
 	},
 	{
 		id: 'c',
 		title: 'Le chemin vers le front-end:',
 		paragraphs: [
-			`Depuis mes débuts dans la <b>création multimédia</b> en 2010, j'ai entrepris un voyage continu vers l'innovation, explorant les intersections entre la technologie et la <b>créativité</b>. Initialement fasciné par des outils comme <b>Photoshop</b>, <b>Illustrator</b> et <b>After Effects</b>, j'ai rapidement trouvé ma voie dans le développement web. De <b>WordPress</b> à <b>Symfony</b>, suivi de <b>ReactJS & NextJs</b> et récemment <b>SvelteKit, GraphQL</b> avec <b>NodeJs</b>, chaque nouvelle technologie a enrichi mes compétences et nourri ma passion pour la création numérique.`,
+			`Depuis mes débuts dans la <b>création multimédia</b> en 2010, j'ai entrepris un voyage continu vers l'innovation, explorant les intersections entre la technologie et la <b>créativité</b>. Initialement fasciné par des outils comme <b>Photoshop</b>, <b>Illustrator</b> et <b>After Effects</b>, j'ai rapidement trouvé ma voie dans le développement web. De <b>WordPress</b> à <b>Symfony</b>, suivi de <b>ReactJS & NextJs</b> et récemment <b>SvelteKit, Vercel</b> avec <b>NodeJs</b> et <b>MongoDB</b>, chaque nouvelle technologie a enrichi mes compétences et nourri ma passion pour la création numérique.`,
 			`Cherchant à continuellement élargir mes compétences, j'ai consolidé mon rôle de développeur frontend, j'ai approfondi ma maîtrise de <b>TypeScript</b>, <b>ReactJS</b> et <b>GraphQL</b>. J'ai ainsi développé un ensemble de compétences intégrées, essentielles pour créer des solutions web qui anticipent les besoins des utilisateurs plutôt que d'y répondre a posteriori.`,
 			`Grâce au développement d'un <b>boilerplate créatif</b>, j'ai jeté les bases d'une approche <b>holistique</b> du développement web, combinant expertise <b>frontend</b> et <b>backend</b> pour créer des applications web complètes, <b>performantes et sécurisées</b>.`
 		]
@@ -154,14 +162,13 @@ export let experienceData = [
 		items: ['XplicitDrink.com', 'cssWinner: Site of the Day', 'cssNectar: Site of the Day']
 	},
 	{
-		date: 'sept.2023 - fev.2024',
-		title: 'Boilerplate',
+		date: 'sept.2023 - Maitnenant',
+		title: 'Freelance',
 		poste: 'Développeur Fullstack',
 		items: [
-			'SvelteKit - GraphQL - NodeJs',
-			'FrontEnd: cursor, darkmode, notifications, transition de page, preloader, PWA, smoothScroll, traduction, ThreeJs',
-			'BackEnd: account, role, handleError, session cookies, token, rateLimite, black listed token, websocket',
-			'PlayWright, Docker, GraphQL'
+			'SvelteKit - Typescript - ThreeJS - GSAP - GraphQL - NodeJs - Vercel - MongoDB - Prisma - PlayWright - Docker ...',
+			'Création de plusieurs boilerplates pour les projets personnalisés',
+			'https://github.com/Pierre-FABIEN'
 		]
 	}
 ];
