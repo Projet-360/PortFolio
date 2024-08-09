@@ -62,7 +62,7 @@ export let DesignData = [
 	},
 	{
 		id: 'c',
-		title: 'Le chemin vers le front-end:',
+		title: 'Le chemin vers le front-end et fullstack:',
 		paragraphs: [
 			`Depuis mes débuts dans la <b>création multimédia</b> en 2010, j'ai entrepris un voyage continu vers l'innovation, explorant les intersections entre la technologie et la <b>créativité</b>. Initialement fasciné par des outils comme <b>Photoshop</b>, <b>Illustrator</b> et <b>After Effects</b>, j'ai rapidement trouvé ma voie dans le développement web. De <b>WordPress</b> à <b>Symfony</b>, suivi de <b>ReactJS & NextJs</b> et récemment <b>SvelteKit, GraphQL</b> avec <b>NodeJs</b>, chaque nouvelle technologie a enrichi mes compétences et nourri ma passion pour la création numérique.`,
 			`Cherchant à continuellement élargir mes compétences, j'ai consolidé mon rôle de développeur frontend, j'ai approfondi ma maîtrise de <b>TypeScript</b>, <b>ReactJS</b> et <b>GraphQL</b>. J'ai ainsi développé un ensemble de compétences intégrées, essentielles pour créer des solutions web qui anticipent les besoins des utilisateurs plutôt que d'y répondre a posteriori.`,
