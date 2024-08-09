@@ -145,19 +145,18 @@ export let experienceData = [
 		]
 	},
 	{
-		date: 'janv. 2020 - mar. 2020',
-		title: 'Js&Co - Mélée Numérique',
-		poste: 'Auto-entrepreneur',
-		items: [
-			'ReactJs, MeteorJs, GSAP'
-		]
-	},
-	{
 		date: 'déc. 2020 - mar. 2022',
 		title: 'Caplaser',
 		poste: 'Web Développeur',
 		items: [
 			'Wordpress, Prestashop, HTML, SASS, PHP, JavaScript, GSAP, Symfony, ReactJs',
+		]
+	},
+	{
+		date: 'fev. 2022',
+		title: 'inkorporation.fr',
+		poste: 'Web Développeur',
+		items: [
 			'Création du site inkorporation.fr',
 			'awwwards : 7.39/10',
 			'cssdesignawards : Special Kudos Award, Best UI Design, Best UX Design, Best Innovation',
