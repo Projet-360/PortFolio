@@ -109,69 +109,117 @@ export let profilData = [
 
 export let experienceData = [
 	{
-		date: 'sept.2017 - nov.2018',
-		title: ' Amadeus Mobile',
-		poste: 'Web designer - intégrateur',
-		items: ['PhotoShop - Wordpress - Prestashop - Symfony', 'HTML - SCSS - JQuery - PHP']
+		date: 'sept. 2015 - mai 2016',
+		title: 'Reso Pouce',
+		poste: 'Webdesigner - Intégrateur - Graphiste',
+		items: [
+			'Diplôme de niveau III - Niveau BTS',
+			'Stage chez Reso Pouce',
+			'Symfony 3, Adobe (Photoshop, Illustrator, After Effects), HTML, CSS, PHP, jQuery'
+		]
 	},
 	{
-		date: 'mar.2019',
-		title: ' Auto-Entrepreneur',
+		date: 'sept. 2017 - fev. 2019',
+		title: 'Amadeus Mobile',
+		poste: 'Webdesigner',
+		items: [
+			'Wordpress, Prestashop, Symfony 4',
+			'Adobe (Photoshop, Illustrator, After Effects), HTML, SASS, PHP, jQuery, JavaScript'
+		]
+	},
+	{
+		date: 'mar. 2019',
+		title: 'Auto-Entrepreneur',
 		poste: 'Développeur Fullstack',
 		items: [
-			'Création site Projet360.com',
-			'Synfony 4, jQuery, JS',
-			'Découverte de ReactJs, Meteor, GSAP'
+			'Création du statut d\'auto-entrepreneur',
+			'Adobe (Photoshop, Illustrator, After Effects), HTML, SASS, PHP, JavaScript, GSAP, Symfony, ReactJs'
 		]
 	},
 	{
-		date: 'dec.2020 - oct.2022',
-		title: ' Caplaser',
-		poste: 'Développeur web - intégrateur',
-		items: ['Wordpress, Prestashop, Intégration', 'HTML, JS, PHP, SCSS']
-	},
-	{
-		date: 'fev.2022',
-		title: ' Awards',
-		poste: 'Développeur créatif - Inkorporation.fr',
+		date: 'juin 2019 - sept. 2019',
+		title: 'Play2Event - Mélée Numérique',
+		poste: 'Auto-entrepreneur',
 		items: [
-			'Inkorporation.fr',
-			'Awwwards - 7.39',
-			'cssdesignawards - Special Kudos award, Best UI-UX-Innovation',
-			'cssWinner: Site of the Day',
-			'cssNectar: Site of the Day',
-			'designNominees: Site of the Day'
+			'React, styled-components, MeteorJs'
 		]
 	},
 	{
-		date: 'sept.2022 - oct.2022',
-		title: 'La jungle',
-		poste: 'Développeur web, intégrateur',
-		items: ['Twig, JS, BEM CSS, HTML, JS, SCSS']
+		date: 'janv. 2020 - mar. 2020',
+		title: 'Js&Co - Mélée Numérique',
+		poste: 'Auto-entrepreneur',
+		items: [
+			'ReactJs, MeteorJs, GSAP'
+		]
 	},
 	{
-		date: 'mar.2023 - sept.2023',
+		date: 'déc. 2020 - mar. 2022',
+		title: 'Caplaser',
+		poste: 'Web Développeur',
+		items: [
+			'Wordpress, Prestashop, HTML, SASS, PHP, JavaScript, GSAP, Symfony, ReactJs',
+			'Création du site inkorporation.fr',
+			'awwwards : 7.39/10',
+			'cssdesignawards : Special Kudos Award, Best UI Design, Best UX Design, Best Innovation',
+			'csswinner : Site of the Day',
+			'cssnectar : Site of the Day',
+			'designNominees : Site of the Day'
+		]
+	},
+	{
+		date: 'sept. 2022 - oct. 2022',
+		title: 'La Jungle',
+		poste: 'Web Intégrateur',
+		items: [
+			'HTML, SASS, PHP, JavaScript'
+		]
+	},
+	{
+		date: 'sept. 2022 - fev. 2023',
+		title: 'XplicitDrink.com',
+		poste: 'Auto-entrepreneur',
+		items: [
+			'SvelteKit, ThreeJs, UX, UI, SEO'
+		]
+	},
+	{
+		date: 'mar. 2023 - sept. 2023',
 		title: 'Hubeecar',
-		poste: 'Développeur web front-end',
-		items: ['ReactJs - Typescript - MaterialUI - GraphQl', 'Methode Agile - Git ']
+		poste: 'Web Développeur',
+		items: [
+			'TypeScript, ReactJs, GraphQL, MUI'
+		]
 	},
 	{
-		date: 'fev.2024',
-		title: 'Awards',
-		poste: 'Développeur créatif - XplicitDrink.com',
-		items: ['XplicitDrink.com', 'cssWinner: Site of the Day', 'cssNectar: Site of the Day']
+		date: 'déc. 2023 - avr. 2024',
+		title: 'Boilerplate SaaS (haute intensité)',
+		poste: 'Développeur Fullstack intensif',
+		items: [
+			'TypeScript, SvelteKit, Playwright, Websocket, GraphQL, Docker, MongoDB',
+			'Projets Front-end : SvelteKit (curseur personnalisé, dark mode, notifications, transitions de page, preloader, PWA, smooth scroll, translation, ThreeJs)',
+			'Projets Back-end : NodeJs (gestion des comptes et rôles, gestion des erreurs, tokens de session, sécurité avec rate limiter et blacklisted tokens)'
+		]
 	},
 	{
-		date: 'sept.2023 - Maitnenant',
+		date: 'juin 2024 - août 2024',
+		title: 'Boilerplate SaaS (basse intensité)',
+		poste: 'Développeur Fullstack',
+		items: [
+			'TypeScript, SvelteKit, Shadcn, Tailwind, ThreeJs, GSAP, OAuth, Cloudinary, Zod, Superform, Stripe, Prisma, MongoDB, Vercel, PWA'
+		]
+	},
+	{
+		date: 'sept. 2023 - Maintenant',
 		title: 'Freelance',
 		poste: 'Développeur Fullstack',
 		items: [
-			'SvelteKit - Typescript - ThreeJS - GSAP - GraphQL - NodeJs - Vercel - MongoDB - Prisma - PlayWright - Docker ...',
+			'SvelteKit, TypeScript, ThreeJS, GSAP, GraphQL, NodeJs, Vercel, MongoDB, Prisma, PlayWright, Docker...',
 			'Création de plusieurs boilerplates pour les projets personnalisés',
 			'https://github.com/Pierre-FABIEN'
 		]
 	}
 ];
+
 
 // Structure de données pour les portfolioFourth
 export let formationData = [
