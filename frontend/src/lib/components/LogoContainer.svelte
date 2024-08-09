@@ -62,7 +62,7 @@
 	<h1 class="branding">
 		<span><span>Pierre</span> FABIEN</span><br />
 		<span>web développeur</span><br />
-		<span>Front-end - design</span>
+		<span>Full-stack - design</span>
 	</h1>
 	<button class="button-circle" on:click={(event) => { scrollTo('fullContainer'); }} >
 		<Arrow	/>
