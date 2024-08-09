@@ -320,14 +320,14 @@ export let bookData = [
 	},
 	{
 		id: 'c',
-		title: 'Boilerplate Sveltekit / GraphQL / NodeJs / MongoDB',
-		subtitle: `Je suis tombé amoureux de sveltekit, c'est pourquoi j'ai réalisé un boilerplate avec celui-ci`,
+		title: 'Boilerplate Sveltekit / GraphQL / Websocket / MongoDB',
+		subtitle: `Réalisation d'un boilerplate pour les gros projets personnalisés avec serveur payant. Réalisé pour travailer en équipe avec back et front dissociés.`,
 		imageUrl: ''
 	},
 	{
 		id: 'd',
-		title: 'Boilerplate Sveltekit / Supabase / Vercel',
-		subtitle: 'Pour les petit pas chere pour le client. (10€ par ans)',
+		title: 'Boilerplate Sveltekit / SAAS / Vercel',
+		subtitle: `Réalisation d'un boilerplate pour les petits projets pas chere pour le client mais scalable (10€ par ans pour .com)`,
 		imageUrl: '/img/book/act.webp'
 	}
 ];
